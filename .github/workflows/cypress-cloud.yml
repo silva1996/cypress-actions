@@ -3,9 +3,9 @@ name: Cypress Cloud
 on: 
    workflow_dispatch:
     inputs:
-      cli:
-        description: Run By cypress command line
-        default: cypress/e2e/**
+      spec:
+        description: Run by cypress command line
+        default: cypress/e2e/*
         
 jobs:
   cypress-e2e-electron:
