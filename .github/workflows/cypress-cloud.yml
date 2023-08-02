@@ -42,7 +42,7 @@ jobs:
         uses: cypress-io/github-action@v5.0.8
         with:
           install-command: yarn install
-          browser: electron
+          browser: chrome
           record: true
           group: UI Chrome 
           spec: ${{ github.event.inputs.spec }}
@@ -63,7 +63,7 @@ jobs:
         uses: cypress-io/github-action@v5.0.8
         with:
           install-command: yarn install
-          browser: electron
+          browser: firefox
           record: true
           group: UI Firefox 
           spec: ${{ github.event.inputs.spec }}
